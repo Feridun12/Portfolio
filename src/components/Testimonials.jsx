@@ -1,11 +1,11 @@
 import React from "react";
-import "../styles/TopBar.scss";
+import "../styles/Testimonials.scss";
 
-function TopBar () {
+function Testimonials () {
     return (
         <div className="top-bar">
             Hello</div>
     )
 }
 
-export default TopBar;
+export default Testimonials;

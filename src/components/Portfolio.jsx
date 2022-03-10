@@ -1,11 +1,11 @@
 import React from "react";
-import "../styles/TopBar.scss";
+import "../styles/Portfolio.scss"
 
-function TopBar () {
+function Portfolio () {
     return (
         <div className="top-bar">
             Hello</div>
     )
 }
 
-export default TopBar;
+export default Portfolio;
