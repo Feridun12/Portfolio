@@ -3,7 +3,7 @@ import "../styles/ContactMe.scss";
 
 function ContactMe () {
     return (
-        <div className="top-bar">
+        <div className="contact-me">
             Hello</div>
     )
 }

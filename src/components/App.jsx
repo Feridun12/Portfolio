@@ -11,9 +11,15 @@ import "../styles/App.scss";
 function App() {
   return (
     <div className="App">
-      <TopBar/>
+      <TopBar />
       <div className="sections">
-        </div>
+        <Intro />
+        <AboutMe />
+        <MySkills />
+        <Testimonials />
+        <Portfolio />
+        <ContactMe />
+      </div>
     </div>
   );
 }

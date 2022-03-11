@@ -3,7 +3,7 @@ import "../styles/MySkills.scss"
 
 function MySkills () {
     return (
-        <div className="top-bar">
+        <div className="my-skills">
             Hello</div>
     )
 }

@@ -3,7 +3,7 @@ import "../styles/Testimonials.scss";
 
 function Testimonials () {
     return (
-        <div className="top-bar">
+        <div className="testimonials">
             Hello</div>
     )
 }

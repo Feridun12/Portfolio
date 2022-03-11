@@ -3,7 +3,7 @@ import "../styles/Portfolio.scss"
 
 function Portfolio () {
     return (
-        <div className="top-bar">
+        <div className="portfolio">
             Hello</div>
     )
 }
