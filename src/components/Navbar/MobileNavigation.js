@@ -1,11 +1,17 @@
 import React from "react";
 import NavLinks from "./NavLinks";
 import "../Navbar/styles/TopBar.scss";
+import { CgMenu } from "react-icons/cg";
+import { useState } from 'react';
 
 function MobileNavigation() {
+const [open, setOpen] = useState(false);
+
   return (
     <nav className="mobile-navigation">
-      <NavLinks />
+      <CgMenu className="hamburger" size="40px" color="black"
+      onClick={() => setOpen(!open) } />
+      { open && <NavLinks />}
     </nav>
   );
 }
