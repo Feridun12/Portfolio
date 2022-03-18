@@ -2,14 +2,26 @@ import React from "react";
 
 function NavLinks() {
   return (
-    <div className="nav-links">
-      <a href="#intro">Home</a>
-      <a href="#about-me">About Me</a>
-      <a href="#my-skills">My Skills</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact-me">Contact Me</a>
-    </div>
+    <ul className="links">
+      <li>
+        <a href="#intro">Home</a>
+      </li>
+      <li>
+        <a href="#about-me">About Me</a>
+      </li>
+      <li>
+        <a href="#my-skills">My Skills</a>
+      </li>
+      <li>
+        <a href="#testimonials">Testimonials</a>
+      </li>
+      <li>
+        <a href="#portfolio">Portfolio</a>
+      </li>
+      <li>
+        <a href="#contact-me">Contact Me</a>
+      </li>
+    </ul>
   );
 }
 

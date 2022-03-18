@@ -6,10 +6,8 @@ import "../Navbar/styles/TopBar.scss";
 function TopBar() {
   return (
     <div className="top-bar">
-      <div className="wrapper">
-        <Navigation />
-        <MobileNavigation />
-      </div>
+      <Navigation />
+      <MobileNavigation />
     </div>
   );
 }
