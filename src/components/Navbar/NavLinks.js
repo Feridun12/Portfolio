@@ -1,27 +1,60 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function NavLinks(props) {
-  return (
+  const animateForm = { opacity: 0, y: -40 };
+  const animateTo = { opacity: 1, y: 0 };
 
+  return (
     <ul className="links">
-      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
+      <motion.li
+        initial={animateForm}
+        animate={animateTo}
+        transition={{ delay: 0.05 }}
+        onClick={() => props.isMobile && props.closeMobileMenu()}
+      >
         <a href="#intro">Home</a>
-      </li>
-      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
+      </motion.li>
+      <motion.li
+        initial={animateForm}
+        animate={animateTo}
+        transition={{ delay: 0.1 }}
+        onClick={() => props.isMobile && props.closeMobileMenu()}
+      >
         <a href="#about-me">About Me</a>
-      </li>
-      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
+      </motion.li>
+      <motion.li
+        initial={animateForm}
+        animate={animateTo}
+        transition={{ delay: 0.2 }}
+        onClick={() => props.isMobile && props.closeMobileMenu()}
+      >
         <a href="#my-skills">My Skills</a>
-      </li>
-      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
+      </motion.li>
+      <motion.li
+        initial={animateForm}
+        animate={animateTo}
+        transition={{ delay: 0.3 }}
+        onClick={() => props.isMobile && props.closeMobileMenu()}
+      >
         <a href="#testimonials">Testimonials</a>
-      </li>
-      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
+      </motion.li>
+      <motion.li
+        initial={animateForm}
+        animate={animateTo}
+        transition={{ delay: 0.4 }}
+        onClick={() => props.isMobile && props.closeMobileMenu()}
+      >
         <a href="#portfolio">Portfolio</a>
-      </li>
-      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
+      </motion.li>
+      <motion.li
+        initial={animateForm}
+        animate={animateTo}
+        transition={{ delay: 0.5 }}
+        onClick={() => props.isMobile && props.closeMobileMenu()}
+      >
         <a href="#contact-me">Contact Me</a>
-      </li>
+      </motion.li>
     </ul>
   );
 }
