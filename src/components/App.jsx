@@ -1,5 +1,5 @@
 import React from "react";
-import TopBar from "./TopBar";
+import TopBar from "./Navbar/TopBar";
 import AboutMe from "./AboutMe";
 import ContactMe from "./ContactMe";
 import Intro from "./Intro";
