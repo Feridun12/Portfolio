@@ -58,7 +58,11 @@
     border-top: 2px solid red;
   }
 
+  .top-bar nav ul li {
+    padding-left: 12%;
+  }
+
   .top-bar {
-    overflow-x: none;
+  opacity: 1;
   }
 }
