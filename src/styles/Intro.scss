@@ -1,4 +1,8 @@
 .intro{
-    background-color: aqua;
+    background-image: url("../images/intro-background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
     z-index: -1;
 }
