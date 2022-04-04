@@ -1,5 +1,5 @@
 .top-bar {
-  background-color: white;
+  background-color: #03030D;
   width: 100%;
   height: 70px;
   position: fixed;
@@ -21,6 +21,8 @@
 .top-bar nav ul li {
   display: inline-block;
   margin: 20px;
+  color: white;
+  font-weight: 600;
 }
 
 .top-bar nav ul li a {

@@ -11,7 +11,7 @@ function MobileNavigation() {
     <CgMenu
       className="hamburger"
       size="40px"
-      color="black"
+      color="white"
       onClick={() => setOpen(!open)}
     />
   );
@@ -20,7 +20,7 @@ function MobileNavigation() {
     <CgCloseO
       className="hamburger"
       size="40px"
-      color="black"
+      color="white"
       onClick={() => setOpen(!open)}
     />
   );
