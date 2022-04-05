@@ -13,7 +13,7 @@ function NavLinks(props) {
         transition={{ delay: 0.05 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="#intro">Home</a>
+        <a href="#home-page">Home</a>
       </motion.li>
       <motion.li
         initial={animateForm}
