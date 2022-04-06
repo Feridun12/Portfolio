@@ -13,9 +13,9 @@ function Intro() {
       backSpeed: 50,
       cursorChar: "|",
       strings: [
-        " a Fullstack Developer ",
-        " an Economist ",
-        " a Tech Enthusiast ",
+        " a Fullstack Developer",
+        " an Economist",
+        " a Tech Enthusiast",
       ],
     });
   }, []);
@@ -24,12 +24,12 @@ function Intro() {
       <div className="wrapper">
         <h1 className="name">Feridun Djanselen</h1>
         <h3 id="intro-h3">
-          I am <span ref={textRef} />
+          I am <div ref={textRef} />
         </h3>
       </div>
       {/* <a href="#about-me" id="arrow-sign">
         <CgArrowDownR size="40px" color="white" />
-        </a> */}
+      </a> */}
     </div>
   );
 }
