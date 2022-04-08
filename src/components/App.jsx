@@ -3,7 +3,7 @@ import TopBar from "./Navbar/TopBar";
 import AboutMe from "./AboutMe";
 import ContactMe from "./ContactMe";
 import Intro from "./Intro";
-import MySkills from "./MySkills";
+import Projects from "./Projects";
 import Portfolio from "./Portfolio";
 import Testimonials from "./Testimonials";
 import "../styles/App.scss";
@@ -15,7 +15,7 @@ function App() {
       <div className="sections">
         <Intro />
         <AboutMe />
-        <MySkills />
+        <Projects />
         <Testimonials />
         <Portfolio />
         <ContactMe />

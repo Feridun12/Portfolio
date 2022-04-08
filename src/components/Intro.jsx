@@ -24,12 +24,12 @@ function Intro() {
       <div className="wrapper">
         <h1 className="name">Feridun Djanselen</h1>
         <h3 id="intro-h3">
-          I am <div ref={textRef} />
+          I am <span ref={textRef}></span>
         </h3>
+        {/* <a href="#about-me" id="arrow-sign">
+          <CgArrowDownR size="40px" color="white" />
+        </a> */}
       </div>
-      {/* <a href="#about-me" id="arrow-sign">
-        <CgArrowDownR size="40px" color="white" />
-      </a> */}
     </div>
   );
 }

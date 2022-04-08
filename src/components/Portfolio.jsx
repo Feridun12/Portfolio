@@ -4,7 +4,7 @@ import "../styles/Portfolio.scss"
 function Portfolio () {
     return (
         <div className="portfolio" id="portfolio">
-            Hello</div>
+            </div>
     )
 }
 
