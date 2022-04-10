@@ -5,7 +5,6 @@ function AboutMe() {
   return (
     <div className="about-me" id="about-me">
       <div className="about-me-left-side">
-        <div className="profile-bground-pic"></div>
         <div className="about-me-profile-pic">
           <img
             className="profile-pic"

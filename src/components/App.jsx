@@ -4,7 +4,7 @@ import AboutMe from "./AboutMe";
 import ContactMe from "./ContactMe";
 import Intro from "./Intro";
 import Projects from "./Projects";
-import Portfolio from "./Portfolio";
+import CV from "./CV";
 import Testimonials from "./Testimonials";
 import "../styles/App.scss";
 
@@ -17,7 +17,7 @@ function App() {
         <AboutMe />
         <Projects />
         <Testimonials />
-        <Portfolio />
+        <CV />
         <ContactMe />
       </div>
     </div>
