@@ -26,7 +26,7 @@ function ContactMe() {
             target="_blank"
             rel="noreferrer"
           >
-            <BsGithub size="40px" />
+            <BsGithub size="40px" color="black" />
           </a>
           <a
             className="twitter-logo"
@@ -34,12 +34,42 @@ function ContactMe() {
             target="_blank"
             rel="noreferrer"
           >
-            <AiFillTwitterSquare size="40px" />
+            <AiFillTwitterSquare size="40px" color="black" />
           </a>
         </div>
       </div>
       <div className="contact-right-side">
-          Hello
+        <div className="form">
+          <p id="contact-paragraph">Get in touch with me!</p>
+          <form id="contact-form">
+            <input
+              className="contact-input"
+              type="text"
+              placeholder="name"
+              name="user_name"
+            />
+            <input
+              className="contact-input"
+              type="text"
+              placeholder="surname"
+              name="user_surname"
+            />
+            <input
+              className="contact-input"
+              type="text"
+              placeholder="subject"
+              name="user_subject"
+            />
+            <input
+              className="contact-input"
+              type="email"
+              placeholder="example@hotmail.com"
+              name="user_email"
+            />
+            <textarea id="contact-message-area" rows="5" placeholder="Your message" name="message" />
+            <button>Submit</button>
+          </form>
+        </div>
       </div>
     </div>
   );

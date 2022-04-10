@@ -1,23 +1,69 @@
 .contact-me {
-  background-color: white;
   display: flex;
+  background-color: white;
+  //   background-image: url(https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=&w=1740&q=80);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .contact-right-side {
-    width: calc(50%);
-    flex: 1;
-    flex-direction: column;
-  }
+  width: calc(50%);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
 .contact-left-side {
-    width: calc(50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  width: calc(50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .linkedin-logo {
   size: 50px;
   flex: 1;
 }
 
+// .form {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+#contact-paragraph {
+  font-size: 25px;
+  color: white;
+}
+
+#contact-form {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.contact-input {
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+#contact-message-area {
+  width: 80%;
+  margin: 10px 0;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+button {
+  cursor: pointer;
+  width: 20%;
+//   margin: auto;
+}
