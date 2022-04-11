@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+// styling
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { AiFillTwitterSquare } from "react-icons/ai";
 import "../styles/ContactMe.scss";
 
 function ContactMe() {
+  const formRef = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_qaig6p9",
+        "template_k3ffr3n",
+        formRef.current,
+        "EwDY51O29PTZwJTqB"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className="contact-me" id="contact-me">
       <div className="contact-left-side">
@@ -41,7 +65,7 @@ function ContactMe() {
       <div className="contact-right-side">
         <div className="form">
           <p id="contact-paragraph">Get in touch with me!</p>
-          <form id="contact-form">
+          <form id="contact-form" ref={formRef} onSubmit={handleSubmit}>
             <input
               className="contact-input"
               type="text"
@@ -66,7 +90,12 @@ function ContactMe() {
               placeholder="example@hotmail.com"
               name="user_email"
             />
-            <textarea id="contact-message-area" rows="5" placeholder="Your message" name="message" />
+            <textarea
+              id="contact-message-area"
+              rows="5"
+              placeholder="Your message"
+              name="message"
+            />
             <button>Submit</button>
           </form>
         </div>
