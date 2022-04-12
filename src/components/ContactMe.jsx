@@ -1,17 +1,18 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import linkedin from "../images/linkedin-logo.png";
+import github from "../images/github-logo.jpg";
+import twitter from "../images/Twitter-Logo-Square.jpg";
 // styling
-import { AiOutlineLinkedin } from "react-icons/ai";
-import { BsGithub } from "react-icons/bs";
-import { AiFillTwitterSquare } from "react-icons/ai";
-import "../styles/ContactMe.scss";
+import "../styles/ContactMe.css";
 
 function ContactMe() {
   const formRef = useRef();
+  const [done, setDone] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    console.log(e);
     emailjs
       .sendForm(
         "service_qaig6p9",
@@ -22,13 +23,15 @@ function ContactMe() {
       .then(
         (result) => {
           console.log(result.text);
+          setDone(true);
         },
         (error) => {
           console.log(error.text);
         }
       );
   };
-
+  // done ? "I will contact you as soon as possible!" : "cannot submit at the moment.";
+  // console.log(done);
   return (
     <div className="contact-me" id="contact-me">
       <div className="contact-left-side">
@@ -39,10 +42,7 @@ function ContactMe() {
             target="_blank"
             rel="noreferrer"
           >
-            <img
-              src="/Users/gadmer/projects/portfolio/portfolio/src/images/linkedin-logo.jpg"
-              alt="linkedin-logo"
-            />
+            <img className="contact-linkedin-logo" src={linkedin} alt="linkedin-logo" />
           </a>
           <a
             className="github-logo"
@@ -50,7 +50,7 @@ function ContactMe() {
             target="_blank"
             rel="noreferrer"
           >
-            <BsGithub size="40px" color="black" />
+            <img className="contact-github-logo" src={github} alt="linkedin-logo" />
           </a>
           <a
             className="twitter-logo"
@@ -58,7 +58,7 @@ function ContactMe() {
             target="_blank"
             rel="noreferrer"
           >
-            <AiFillTwitterSquare size="40px" color="black" />
+            <img className="contact-twitter-logo" src={twitter} alt="linkedin-logo" />
           </a>
         </div>
       </div>

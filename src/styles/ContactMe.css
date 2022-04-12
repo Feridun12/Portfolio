@@ -1,7 +1,7 @@
 .contact-me {
   display: flex;
   background-color: white;
-  //   background-image: url(https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=&w=1740&q=80);
+    background-image: url(../images/black-background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -25,13 +25,31 @@
   size: 50px;
   flex: 1;
 }
+/* social media logos */
+.contact-linkedin-logo{
+  height: 20px;
+  width: 20px;
+}
+.contact-github-logo{
+  height: 20px;
+  width: 20px;
+}
+.contact-twitter-logo{
+  height: 20px;
+  width: 20px;
+}
 
-// .form {
+.contact-linkedin-logo{
+  height: 20px;
+  width: 20px;
+}
+
+/* // .form {
 //   display: flex;
 //   flex-direction: column;
 //   justify-content: center;
 //   align-items: center;
-// }
+// } */
 
 #contact-paragraph {
   font-size: 25px;
@@ -49,10 +67,12 @@
 .contact-input {
   width: 50%;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   margin: 10px 0;
   font-size: 14px;
   padding-left: 10px;
+  color:white;
+  background-color: transparent;
 }
 
 #contact-message-area {
@@ -65,5 +85,5 @@
 button {
   cursor: pointer;
   width: 20%;
-//   margin: auto;
+ margin: auto;
 }
