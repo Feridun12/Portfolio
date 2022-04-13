@@ -42,7 +42,7 @@ function ContactMe() {
             target="_blank"
             rel="noreferrer"
           >
-            <img className="contact-linkedin-logo" src={linkedin} alt="linkedin-logo" />
+            <img className="social-media-logo" src={linkedin} alt="linkedin-logo" />
           </a>
           <a
             className="github-logo"
@@ -50,7 +50,7 @@ function ContactMe() {
             target="_blank"
             rel="noreferrer"
           >
-            <img className="contact-github-logo" src={github} alt="linkedin-logo" />
+            <img className="social-media-logo" src={github} alt="linkedin-logo" />
           </a>
           <a
             className="twitter-logo"
@@ -58,7 +58,7 @@ function ContactMe() {
             target="_blank"
             rel="noreferrer"
           >
-            <img className="contact-twitter-logo" src={twitter} alt="linkedin-logo" />
+            <img className="social-media-logo" src={twitter} alt="linkedin-logo" />
           </a>
         </div>
       </div>
@@ -69,25 +69,25 @@ function ContactMe() {
             <input
               className="contact-input"
               type="text"
-              placeholder="name"
+              placeholder="Name"
               name="user_name"
             />
             <input
               className="contact-input"
               type="text"
-              placeholder="surname"
+              placeholder="Surname"
               name="user_surname"
             />
             <input
               className="contact-input"
               type="text"
-              placeholder="subject"
+              placeholder="Subject"
               name="user_subject"
             />
             <input
               className="contact-input"
               type="email"
-              placeholder="example@hotmail.com"
+              placeholder="Example@hotmail.com"
               name="user_email"
             />
             <textarea
@@ -96,7 +96,7 @@ function ContactMe() {
               placeholder="Your message"
               name="message"
             />
-            <button>Submit</button>
+            <button className="glow-on-hover" type="button">Submit</button>
           </form>
         </div>
       </div>
