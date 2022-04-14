@@ -96,7 +96,8 @@ function ContactMe() {
               placeholder="Your message"
               name="message"
             />
-            <button className="glow-on-hover" type="button">Submit</button>
+            <button className="glow-on-hover">Submit</button>
+            {done && <div className="submit-message">I will contact you as soon as possible!</div>}
           </form>
         </div>
       </div>
