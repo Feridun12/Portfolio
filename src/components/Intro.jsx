@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "../styles/Intro.scss";
 import { init } from "ityped";
-// import { CgArrowDownR } from "react-icons/cg";
+import { CgArrowDownR } from "react-icons/cg";
 
 function Intro() {
   const textRef = useRef();
@@ -26,9 +26,9 @@ function Intro() {
         <h3 id="intro-h3">
           I am <span ref={textRef}></span>
         </h3>
-        {/* <a href="#about-me" id="arrow-sign">
+        <a href="#about-me" id="arrow-sign">
           <CgArrowDownR size="40px" color="white" />
-        </a> */}
+        </a>
       </div>
     </div>
   );
