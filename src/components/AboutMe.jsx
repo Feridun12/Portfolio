@@ -1,4 +1,5 @@
 import React from "react";
+import profile from "../images/profile-pic.jpg"
 import "../styles/AboutMe.scss";
 
 function AboutMe() {
@@ -8,7 +9,7 @@ function AboutMe() {
         <div className="about-me-profile-pic">
           <img
             className="profile-pic"
-            src="https://scontent.fecn1-1.fna.fbcdn.net/v/t1.6435-9/62371332_2470882449641014_3512762066731532288_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=Hwe2X5KcCh4AX-6YogV&_nc_ht=scontent.fecn1-1.fna&oh=00_AT-XsbTLny0xzMlDUL4ALCqVLfi3fVSxvnydCT1SHlNpNg&oe=62743682"
+            src={profile}
             alt="a pic of me in the about part"
           />
         </div>

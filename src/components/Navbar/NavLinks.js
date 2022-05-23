@@ -45,7 +45,13 @@ function NavLinks(props) {
         transition={{ delay: 0.4 }}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="#portfolio">CV</a>
+        <a
+          href="https://drive.google.com/file/d/1_MndIijJPro1qUeMIU4YFmMNT5VhqmZQ/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+        >
+        CV
+        </a>
       </motion.li>
       <motion.li
         initial={animateForm}
